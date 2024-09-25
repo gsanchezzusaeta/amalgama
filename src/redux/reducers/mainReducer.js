@@ -13,11 +13,7 @@ const initialState = {
 export const fetchBooksAndUsers = createAsyncThunk(
     'app/fetchBooksAndUsers',
     async () => {
-        // const booksResponse = await fetch('https://api/books');
-        // const usersResponse = await fetch('https://api/users');
-        // let books = await booksResponse.json();
-        // let users = await usersResponse.json();
-
+    
         let books = mockBooks
         let users = mockUsers
 
@@ -53,7 +49,6 @@ export const appSlice = createSlice({
                     };
                 });
 
-                // Agregar autores
                 books.forEach((book) => {
                     if (book.author) {
                         state.authors[book.author.id] = book.author;
