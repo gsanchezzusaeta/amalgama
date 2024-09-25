@@ -1,0 +1,16 @@
+
+.primary-btn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgb(53, 78, 53);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 80%;
+    border-radius: 5px;
+}
+
+
+.primary-btn:disabled{
+    opacity: 0.8;
+}

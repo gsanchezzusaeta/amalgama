@@ -1,0 +1,31 @@
+
+.loader {
+
+    border-radius: 50%;
+    display: flex;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+
+    &.login {
+        width: 1.5rem;
+        height: 1.5rem;
+        border: 2px solid gray;
+        border-bottom-color: transparent;
+    }
+
+    &.screen {
+        width: 3rem;
+        height: 3rem;
+        border: 5px solid gray;
+        border-bottom-color: transparent;
+    }
+
+}
+
+.loader-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
